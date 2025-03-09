@@ -1,7 +1,8 @@
 #box2{
     border-radius:30px;
     height:600px;
-    width:1000px;
+    width:80%;
+    max-width:1000px;
     background-image:url("https://surl.li/lognrx");
     background-repeat:no-repeat;
     background-position:center;
@@ -21,10 +22,11 @@
 body{
     background-color:white;
     background-size:cover;
+    margin:0;
 }
 #h{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:50px;
+    font-size:60px;
     margin-left:25px;
     margin-right:350px;
     
@@ -71,7 +73,7 @@ body{
     padding:5px;
     border-radius:5px;
     margin-left:25px;
-    margin-right:50px;
+    margin-right:25px;
 }
 #box3{
     position:relative;
@@ -83,6 +85,8 @@ img{
     overflow: clip;
     border-radius: 10px;
     margin:38px;
+    max-width: 100%; 
+    height: auto;
 }
 #head{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -212,12 +216,72 @@ img{
     color:black;
     margin-left:35px;
 }
+#footdesc{
+    position:relative;
+    top:80px;
+    border:solid;
+    border-radius:10px;
+    height:250px;
+    width:90%;
+    margin-left:70px;
+    text-align: center;
+    background-color:rgb(226, 223, 223);
+}
+#p1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px;
+    font-weight: bold;
+}
+#sp1,#sp2,#sp3,#sp4,#sp5,#sp6{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:double;
+    border-radius:5px;
+    padding:5px;
+    margin-right:40px;
+    background-color: white;
+}
+#sp7,#sp8,#sp9,#sp10,#sp11{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:double;
+    border-radius:5px;
+    padding:5px;
+    margin-right:40px;
+    background-color: white;
+    position:relative;
+    top:40px;
+}
+#sp1:hover ,#sp2:hover ,#sp3:hover ,#sp4:hover ,#sp5:hover ,#sp6:hover ,#sp7:hover ,#sp8:hover ,#sp9:hover,#sp10:hover,#sp11:hover{
+    background-color: rgb(248, 124, 145);
+}
+#footlast{
+    position:relative;
+    top:180px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left:15%;
+    width:70%;
+    border-bottom: double;
+    text-align: center;
+}
+#sp12,#sp13,#sp14,#sp15{
+    font-family:'Courier New', Courier, monospace;
+    margin-right:40px;
+}
 #foot{
     position:relative;
-    top:70px;
-    margin-left:550px;
+    top:200px;
+    margin-left:565px;
     font-family:'Courier New', Courier, monospace;
-    border-top:double;
+    border-top:solid;
     font-weight: 900;
 }
-
+@keyframes first{
+from{margin-left: 100%}
+to{margin-left:0%}
+}
+#box2{
+    animation:first;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-play-state:running;
+}
